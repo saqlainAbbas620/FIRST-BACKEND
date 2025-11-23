@@ -1,0 +1,17 @@
+{
+  "name": "first-backend",
+  "version": "1.0.0",
+  "description": "My first backend project",
+  "keywords": [
+    "first",
+    "backend",
+    "js"
+  ],
+  "license": "ISC",
+  "author": "Saqlain Abbas",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
