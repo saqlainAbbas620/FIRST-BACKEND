@@ -21,7 +21,7 @@ import jwt from 'jsonwebtoken';
         lowercase:true,
         trim: true,
     },
-    fullname:{
+    fullName:{
         type:String,
         required:true,
         trim: true,
@@ -54,7 +54,7 @@ import jwt from 'jsonwebtoken';
 
  userSchema.pre("save", async function (next){
     if(this.isModified("password")) return next();
-    this.password = bcryot.hash(this.password, 10)
+    this.password = await bcrypt.hash(this.password, 10)
     next()
  })
 
